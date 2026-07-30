@@ -1,5 +1,26 @@
 # Carwyn Yeo — Portfolio Site
 
+## How I built this
+
+I designed this site around a chess motif, since I'm a former national chess
+player and coach — section labels read like game notation ("The middlegame,"
+"Endgame"), and I numbered my work experience as moves in a sequence (1.
+Fortis → 2. Handshakes → 3. IRAS) rather than a generic timeline. I built it
+as a plain multi-page static site — HTML, CSS, and vanilla JS, no framework
+and no build step — and ran it locally with Python's built-in HTTP server to
+preview each page before shipping it. I chose a black background with a warm
+gold accent, added a subtle grain texture and a drifting glow behind the hero
+name so the black doesn't sit flat, and gave cards and nav links a hover
+lift/glow so the site doesn't read like a static resume.
+
+## How I deployed it
+
+I pushed the folder to a GitHub repo, then connected that repo to Render as a
+Static Site — I left the build command blank and set the publish directory
+to the repo root, since there's nothing to compile. Render then gave me a
+public `onrender.com` URL and now redeploys automatically every time I push
+to `main`.
+
 A static multi-page portfolio site. No build step — just HTML, CSS, and vanilla JS.
 
 ## Files
